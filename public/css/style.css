@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;  
+    
+ }
+
+h1{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: bold;
+    font-variation-settings:
+      "slnt" 0;
+    color:aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+body{
+    background: #000;
+}
+
+.navbar{
+    background-color: #E15F01;
+    width: 100%;
+    position: relative;
+
+}
+
+.nav-links{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+}
+
+.flex{
+    flex: 1;
+}
+.navbar h1 a{
+    color:aliceblue;
+    
+    
+}
+
+.links-a{
+    display: flex;
+    justify-content: space-between;
+    flex:1;
+    
+    
+
+}
+
+.links-a ul li{
+    padding: 500px;
+}
+
+.links a{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    color:aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/**** SLIDER *****/
+.slider{
+    margin: 0 auto;
+    width: 100%;
+    
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    
+    display: flex;
+}
+
+.slides input{
+    display:none;
+}
+
+.slide{
+    width:25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+}
+
+.manual-navigation{
+    position:absolute;
+    width:100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border:2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right:40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left:-0%;
+}
+#radio2:checked ~ .first{
+    margin-left:-25%;
+}
+#radio3:checked ~ .first{
+    margin-left:-50%;
+}
+#radio4:checked ~ .first{
+    margin-left:-75%;
+}
+
+
+.navigation-auto div{
+    border:2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right:40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+
+
+
+
+
+/*** FIM SLIDER ****/
+
+/*
+header{
+    background: url(../img/gealdeira.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+*/
+main h1{
+    text-align: center;
+    padding: 20px;
+}
+
+main p{
+    padding-bottom: 20px;
+}
+main{
+    
+    width: 70%;
+    text-align: justify;
+    margin: 0 auto;
+    color:#fff;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    background-color: #E3AA59;
+    
+}
+
+.section-one{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.s2 h2{
+    font-size: 18px; 
+}
+.s1 img{
+    width: 100px;
+}
+
+.s2{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    color:aliceblue;
+    text-decoration: none;
+    
+}
+
+.section-two{
+    height:100vh;
+    width: 100%;
+    background-color: #E3A50E;
+    display: flex;
+}
+
+.section-autor{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sa1{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    color:aliceblue;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.sa2 img{
+    width: 300px;
+}
+
+footer{
+    margin:20px auto;
+    color:#fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+footer p{
+    text-align: center;
+}
+
+
+/*****   Responsivo *****/
+@media only screen and (max-width: 700px) {
+    .nav-links{
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column; 
+        
+    }
+
+    .links-a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex:1;
+    
+    }
+
+   .section-one{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .section-autor{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   }
+    
+    }
