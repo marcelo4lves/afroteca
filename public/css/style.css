@@ -61,6 +61,7 @@ body{
 
 .links-a ul li{
     padding: 500px;
+    list-style: none;
 }
 
 .links a{
@@ -74,6 +75,13 @@ body{
     color:aliceblue;
     text-decoration: none;
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color:#000;
+    border-bottom: 3px solid #000;
+    transition: 1s;
 }
 /**** SLIDER *****/
 .slider{
@@ -207,28 +215,40 @@ main{
     margin-bottom: 50px;
     margin-top: 50px;
 }
+.video{
+    position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .section{
-    padding-top: 60px;
-    padding-bottom: 60px;
+   
     width: 100%;
     background-color: #E3AA59;
     
 }
 
 .section-one{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .s2 h2{
     font-size: 18px; 
 }
 .s1 img{
-    width: 100px;
+    width: 100%;
 }
 
 .s2{
@@ -241,11 +261,12 @@ main{
       "slnt" 0;
     color:aliceblue;
     text-decoration: none;
-    
+    width: 70%;
+    padding: 50px;
 }
 
 .section-two{
-    height:100vh;
+    
     width: 100%;
     background-color: #E3A50E;
     display: flex;
@@ -300,6 +321,10 @@ footer p{
         display: flex;
         flex-direction: column; 
         
+    }
+    main{
+    
+        width: 90%;
     }
 
     .links-a{
